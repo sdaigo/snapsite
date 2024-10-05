@@ -1,0 +1,7 @@
+# lefthook.yml simple
+pre-commit:
+  parallel: true
+  commands:
+    lint:
+      glob: "*.{js,ts,jsx,tsx}"
+      run: bunx @biomejs/biome check {staged_files}
